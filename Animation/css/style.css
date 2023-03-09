@@ -1,0 +1,482 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://img4.goodfon.ru/original/1366x768/e/ee/darkest-dungeon-death-candles-swords-ruins-altar.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.pentagram{
+    position: absolute;
+    top: 5%;
+    left: 41%;
+    animation: pentagram 7s 2s cubic-bezier(0,1.01,.78,-0.16) infinite;
+
+}
+
+.pentagram img{
+    width: 70%;
+}
+
+.reaper {
+    position: absolute;
+    left: -30%;
+    bottom: 1%;
+    width: 40%;
+    animation: reaper 7s 3s cubic-bezier(0,1.19,1,-0.48) infinite;   
+}
+.reaper img {
+    width: 80%;
+
+}
+
+.skeleton1 {
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+}
+
+.skeleton1 img {
+    width: 100%;
+}
+
+
+.hunter{
+position: absolute;
+right: -20%;
+bottom: 0;
+width: 20%;
+animation: hunter 7s 3s cubic-bezier(0,1.01,.22,.92) infinite;
+}
+
+.body{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    animation: body 7s 2s infinite;
+    opacity: 0;
+}
+
+.body img{
+    width: 70%;
+}
+
+.light{
+    position: absolute;
+    right: 22%;
+    top: 25%;
+    rotate: 45deg;
+    animation: light 7s 2s infinite;
+    opacity: 0;
+    z-index: 200;
+
+}
+
+.light img{
+    width: 120%;
+}
+
+.light2{
+    position: absolute;
+    right: 12%;
+    top: 28%;
+    rotate: 65deg;
+    animation: light2 7s 2s infinite;
+    opacity: 0;
+    z-index: 201;
+}
+
+.light2 img{
+    width: 85%;
+}
+
+
+@keyframes reaper{
+    0%{
+        left: -30%;
+        bottom: 1%;
+
+    }
+
+    30%{
+        left: 10%;
+        bottom: 1%;
+    }
+
+    60%{
+        left: 0;
+        bottom: 30%;
+    }
+
+    80%{
+        left: 0;
+        bottom: 1%;
+    }
+
+    100%{
+        left: 0;
+        bottom: -200%;
+    }
+}
+
+@keyframes hunter{
+    0%{
+        bottom: 0;
+        right: -20%;
+    }
+
+    5%{
+        right: -15%;
+        bottom: 0;
+    }
+
+    10%{
+        right: -10%;
+        bottom: 0;
+    }
+
+    15%{
+        right: 0%;
+        bottom: 0;
+        
+    }
+
+    50%{
+        right: 10%;
+        bottom: 0;
+    }
+
+    
+    65%{
+        right: 10%;
+        bottom: 0;
+        opacity: 1;
+       
+    }
+
+    80%{
+        right: 10%;
+        bottom: 0;
+        opacity: 0;
+       
+    }
+
+    87%{
+        right: 10%;
+        bottom: 0;
+        rotate: -360deg;
+        opacity: 0;
+    }
+
+
+    93%{
+        right: -20%;
+        bottom: 0;
+        rotate: -360deg;
+        opacity: 0;
+
+    }
+
+    100%{
+        right: -20%;
+        bottom: 0;
+        rotate: -360deg;
+        opacity: 0;
+    }
+        
+    
+}
+
+@keyframes pentagram{
+     0%{
+        top: 5%;
+        left: 41%;
+        opacity: 0;
+     }
+
+
+     10%{
+        opacity: 0;
+     }
+
+     20%{
+        opacity: 0;
+     }
+
+     30%{
+        opacity: 0.5;
+     }
+
+
+     50%{
+        opacity: 1;
+        top: 5%;
+       left: 41%;
+     }
+
+
+     70%{
+        scale: 150%;
+        top: 5%;
+        left: 41%;
+     }
+    
+    80%{
+        scale: 150%;
+        top: 0%;
+        left: 65%;
+        opacity: 1;
+    }
+
+
+    95%{
+       
+        top: 0%;
+        left: 65%;
+        opacity: 0.5;
+        
+    }
+
+
+    100%{
+        opacity: 0;
+        top: 0%;
+        left: 65%;
+    }
+}
+
+@keyframes light{
+    0%{
+        opacity: 0;
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+    }
+
+    10%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 0;
+    }
+
+    69%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 0;
+    }
+
+    79%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 0;
+    }
+    
+    80%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 1;
+    }
+
+    90%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 0;
+    }
+    
+    91%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 0;
+    }
+
+    92%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 1;
+    }
+
+    93%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 0;
+    }
+
+
+    94%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 1;
+    }
+
+
+    95%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 0;
+    }
+ 
+    100%{
+        right: 22%;
+        top: 25%;
+        rotate: 45deg;
+        opacity: 0;
+    }
+}
+
+@keyframes light2{
+    0%{
+        opacity: 0;
+        right: 12%;
+        top: 28%;
+        rotate: 65deg;
+    }
+
+    10%{
+        right: 12%;
+        top: 28%;
+        rotate: 65deg;
+        opacity: 0;
+    }
+
+    69%{
+        right: 12%;
+    top: 28%;
+    rotate: 65deg;
+        opacity: 0;
+    }
+
+    79%{
+        right: 12%;
+    top: 28%;
+    rotate: 65deg;
+        opacity: 0;
+    }
+    
+    80%{
+        right: 12%;
+    top: 28%;
+    rotate: 65deg;
+        opacity: 1;
+    }
+
+    90%{
+        right: 12%;
+        top: 28%;
+        rotate: 65deg;
+        opacity: 0;
+    }
+    
+    91%{
+        right: 12%;
+        top: 28%;
+        rotate: 65deg;
+        opacity: 0;
+    }
+
+    92%{
+        right: 12%;
+        top: 28%;
+        rotate: 65deg;
+        opacity: 1;
+    }
+
+    93%{
+        right: 12%;
+    top: 28%;
+    rotate: 65deg;
+        opacity: 0;
+    }
+
+
+    94%{
+        right: 12%;
+        top: 28%;
+        rotate: 65deg;
+        opacity: 1;
+    }
+
+
+    95%{
+        right: 12%;
+        top: 28%;
+        rotate: 65deg;
+        opacity: 0;
+    }
+ 
+    100%{
+        right: 12%;
+    top: 28%;
+    rotate: 65deg;
+        opacity: 0;
+    }
+}
+
+@keyframes body{
+    0%{
+        opacity: 0;
+    }
+
+    10%{
+        opacity: 0;
+    }
+
+    69%{
+        opacity: 0;
+    }
+
+    79%{
+        opacity: 0;
+    }
+    
+    80%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 0;
+    }
+    
+    91%{
+        opacity: 0;
+    }
+
+    92%{
+        opacity: 1;
+    }
+
+    93%{
+        opacity: 0;
+    }
+
+
+    94%{
+        opacity: 1;
+    }
+
+
+    95%{
+        opacity: 0;
+    }
+ 
+    100%{
+        opacity: 0;
+    }
+}
